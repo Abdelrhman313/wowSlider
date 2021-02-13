@@ -1,0 +1,419 @@
+header{
+    padding-top: 70px;
+}
+
+.mainSlider {
+    height: 500px !important;
+    border: 10px solid;
+    box-shadow: 0px 0px 10px 4px #44adff;
+    border-image-source: linear-gradient(to right, #2d71a7, #1d354a, #2396f3, #2d71a7);
+    border-image-slice: 1;
+    animation: fitShadow 1s ease-in-out infinite 0s forwards;
+
+}
+@keyframes fitShadow {
+    0% {
+        box-shadow: 0px 0px 10px 4px #44adff;
+    }
+
+    50% {
+        box-shadow: 0px 0px 16px 8px #44adff;
+    }
+
+    100% {
+        box-shadow: 0px 0px 10px 4px #44adff;
+    }
+}
+
+.ws_images {
+    height: 520px !important;
+}
+
+.item {
+    position: relative;
+}
+
+.item .content {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item img {
+    width: 100%;
+    height: 100% !important;
+    display: block;
+    object-fit: cover;
+}
+.item .content h1 {
+    font-size: 56px;
+    font-weight: 600;
+    margin: 5px 0 20px;
+    word-spacing: 3px;
+    color: #fff;
+}
+.item.active .content h1 {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-delay: 0.6s;
+}
+.item.active .content h1.one {
+    animation-name: bounceInLeft;
+}
+
+.item.active .content h1.two {
+    animation-name: bounceInRight;
+}
+
+.item.active .content h1.three {
+    animation-name: rollIn;
+}
+
+.item.active .content h1.four {
+    animation-name: fadeInDownBig;
+}
+
+.item.active .content h1.five {
+    animation-name: tada;
+}
+
+/******************************Second Sliders**************************************/
+.sliders {
+    padding: 100px 0px;
+}
+
+.sliders .second-carousel .owl-stage-outer {
+    border: 10px solid #cc2418;
+    border-radius: 3px;
+    box-shadow: 0px 0px 16px 8px #cc2418;
+    animation: flashBorder 1s ease-in-out 0s infinite forwards;
+}
+
+@keyframes flashBorder {
+    0% {
+        box-shadow: 0px 0px 16px 8px #cc2418;
+    }
+
+    50% {
+        box-shadow: 0px 0px 8px 4px #cc2418;
+    }
+
+    100% {
+        box-shadow: 0px 0px 16px 8px #cc2418;
+    }
+}
+
+.sliders .owl-carousel .item {
+    position: relative;
+}
+
+.sliders .owl-carousel .item img {
+    height: 350px !important;
+}
+
+.sliders .owl-carousel .item .cover {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(87, 27, 27, 0.267);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.sliders .slider .owl-item.active h2 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-delay: 0.3s;
+}
+
+.sliders .slider .owl-item.active h2.one {
+    animation-name: swing;
+}
+
+.sliders .slider .owl-item.active h2.two {
+    animation-name: bounce;
+}
+
+.sliders .slider .owl-item.active h2.three {
+    animation-name: wobble;
+}
+
+.sliders .slider .owl-item.active h2.four {
+    animation-name: rotateInDownLeft;
+}
+
+.sliders .slider .owl-item.active h2.five {
+    animation-name: rotateInUpLeft;
+}
+
+.sliders .slider .owl-item.active h2.six {
+    animation-name: wobble;
+}
+
+@media(max-width: 767.99px) {
+    .sliders .slider {
+        margin-bottom: 30px;
+    }
+}
+
+/******************************Third Sliders**************************************/
+.my-sliders {
+    padding: 100px 0px;
+}
+
+.my-sliders .third-carousel .owl-stage-outer {
+    border: 10px solid #009688;
+    border-radius: 3px;
+    box-shadow: 0px 0px 14px 7px #009688;
+    animation: flashShadow 1s ease-in-out 0s infinite forwards;
+}
+
+@keyframes flashShadow {
+    0% {
+        box-shadow: 0px 0px 14px 7px #009688;
+    }
+
+    50% {
+        box-shadow: 0px 0px 7px 3.5px #009688;
+    }
+
+    100% {
+        box-shadow: 0px 0px 14px 7px #009688;
+    }
+}
+
+.my-sliders .my-slider .owl-carousel .item {
+    position: relative;
+}
+
+.my-sliders .my-slider .owl-carousel .item img {
+    height: 300px !important;
+}
+
+.my-sliders .my-slider .owl-carousel .item .cover {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(87, 27, 27, 0.267);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.my-sliders .my-slider .owl-item.active h3 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-delay: 0.3s;
+}
+
+.my-sliders .my-slider .owl-item.active h3.one {
+    animation-name: fadeInLeftBig;
+}
+
+.my-sliders .my-slider .owl-item.active h3.two {
+    animation-name: fadeInRightBig;
+}
+
+.my-sliders .my-slider .owl-item.active h3.three {
+    animation-name: fadeInDownBig;
+}
+
+.my-sliders .my-slider .owl-item.active h3.four {
+    animation-name: fadeInUpBig;
+}
+
+.my-sliders .my-slider .owl-item.active h3.five {
+    animation-name: rotateIn;
+}
+
+.my-sliders .my-slider .owl-item.active h3.six {
+    animation-name: rotateInUpLeft;
+}
+
+.my-sliders .my-slider .owl-item.active h3.seven {
+    animation-name: rotateInUpRight;
+}
+
+.my-sliders .my-slider .owl-item.active h3.eight {
+    animation-name: rollIn;
+}
+
+.my-sliders .my-slider .owl-item.active h3.nine {
+    animation-name: fadeInDownBig;
+}
+
+@media(max-width: 991.99px) {
+    .my-sliders .my-slider {
+        margin-bottom: 30px;
+    }
+}
+
+/******************************Last Sliders**************************************/
+.last-sliders {
+    padding: 100px 0px;
+}
+
+.last-sliders .fourth-carousel .owl-stage-outer {
+    border: 10px solid #4CAF50;
+    border-radius: 3px;
+    box-shadow: 0px 0px 12px 6px #4CAF50;
+    animation: lastFlashShadow 1s ease-in-out 0s infinite forwards;
+}
+
+@keyframes lastFlashShadow {
+    0% {
+        box-shadow: 0px 0px 12px 6px #4CAF50;
+    }
+
+    50% {
+        box-shadow: 0px 0px 6px 2px #4CAF50;
+    }
+
+    100% {
+        box-shadow: 0px 0px 12px 6px #4CAF50;
+    }
+}
+
+.last-sliders .last-slider .owl-carousel .item {
+    position: relative;
+}
+
+.last-sliders .last-slider .owl-carousel .item img {
+    height: 250px !important;
+}
+
+.last-sliders .last-slider .owl-carousel .item .cover {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31, 150, 37, 0.226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.owl-dots {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 0px;
+}
+
+.owl-carousel button.owl-dot {
+    border: 1px;
+    outline: none;
+    padding: 7px !important;
+    background: #4caf50;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+
+.owl-carousel button.owl-dot.active {
+    background: #f12c1e;
+}
+
+.last-sliders .last-slider .owl-item.active h4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-delay: 0.3s;
+}
+
+.last-sliders .last-slider .owl-item.active h4.one {
+    animation-name: fadeInTopLeft;
+}
+
+.last-sliders .last-slider .owl-item.active h4.two {
+    animation-name: fadeInRightBig;
+}
+
+.last-sliders .last-slider .owl-item.active h4.three {
+    animation-name: bounceInDown;
+}
+
+.last-sliders .last-slider .owl-item.active h4.four {
+    animation-name: fadeInTopRight;
+}
+
+.last-sliders .last-slider .owl-item.active h4.five {
+    animation-name: rotateIn;
+}
+
+.last-sliders .last-slider .owl-item.active h4.six {
+    animation-name: rotateInUpLeft;
+}
+
+.last-sliders .last-slider .owl-item.active h4.seven {
+    animation-name: fadeInBottomLeft;
+}
+
+.last-sliders .last-slider .owl-item.active h4.eight {
+    animation-name: rollIn;
+}
+
+.last-sliders .last-slider .owl-item.active h4.nine {
+    animation-name: fadeInDown;
+}
+
+.last-sliders .last-slider .owl-item.active h4.ten {
+    animation-name: fadeInBottomRight;
+}
+
+.last-sliders .last-slider .owl-item.active h4.eleven {
+    animation-name: fadeInDownBig;
+}
+
+.last-sliders .last-slider .owl-item.active h4.twelve {
+    animation-name: flipInX;
+}
+
+@media(max-width: 991.99px) {
+    .last-sliders .last-slider {
+        margin-bottom: 30px;
+    }
+}
+
+/************************************* Nice Scroll Style *********************************************/
+.nicescroll-rails {
+    z-index: 20000 !important;
+}
+
+.nicescroll-rails div {
+    border: 1px solid #4caf50 !important;
+}
+
+@media(max-width: 767.99px) {
+    .nicescroll-rails {
+        width: 10px !important;
+    }
+
+    .nicescroll-rails div {
+        width: 10px !important;
+    }
+}
