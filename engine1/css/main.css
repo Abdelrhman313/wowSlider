@@ -1,4 +1,23 @@
-header{
+.container-fluid {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+
+.row{
+    margin: 0px !important;
+}
+
+body{
+    margin: 0px;
+    padding-bottom: 40px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* ******************************************************** */
+header {
     padding-top: 70px;
 }
 
@@ -9,8 +28,8 @@ header{
     border-image-source: linear-gradient(to right, #2d71a7, #1d354a, #2396f3, #2d71a7);
     border-image-slice: 1;
     animation: fitShadow 1s ease-in-out infinite 0s forwards;
-
 }
+
 @keyframes fitShadow {
     0% {
         box-shadow: 0px 0px 10px 4px #44adff;
@@ -52,6 +71,7 @@ header{
     display: block;
     object-fit: cover;
 }
+
 .item .content h1 {
     font-size: 56px;
     font-weight: 600;
@@ -59,6 +79,7 @@ header{
     word-spacing: 3px;
     color: #fff;
 }
+
 .item.active .content h1 {
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
@@ -66,6 +87,7 @@ header{
     animation-fill-mode: both;
     animation-delay: 0.6s;
 }
+
 .item.active .content h1.one {
     animation-name: bounceInLeft;
 }
@@ -86,95 +108,9 @@ header{
     animation-name: tada;
 }
 
-/******************************Second Sliders**************************************/
-.sliders {
-    padding: 100px 0px;
-}
-
-.sliders .second-carousel .owl-stage-outer {
-    border: 10px solid #cc2418;
-    border-radius: 3px;
-    box-shadow: 0px 0px 16px 8px #cc2418;
-    animation: flashBorder 1s ease-in-out 0s infinite forwards;
-}
-
-@keyframes flashBorder {
-    0% {
-        box-shadow: 0px 0px 16px 8px #cc2418;
-    }
-
-    50% {
-        box-shadow: 0px 0px 8px 4px #cc2418;
-    }
-
-    100% {
-        box-shadow: 0px 0px 16px 8px #cc2418;
-    }
-}
-
-.sliders .owl-carousel .item {
-    position: relative;
-}
-
-.sliders .owl-carousel .item img {
-    height: 350px !important;
-}
-
-.sliders .owl-carousel .item .cover {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(87, 27, 27, 0.267);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    text-align: center;
-}
-
-.sliders .slider .owl-item.active h2 {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    animation-delay: 0.3s;
-}
-
-.sliders .slider .owl-item.active h2.one {
-    animation-name: swing;
-}
-
-.sliders .slider .owl-item.active h2.two {
-    animation-name: bounce;
-}
-
-.sliders .slider .owl-item.active h2.three {
-    animation-name: wobble;
-}
-
-.sliders .slider .owl-item.active h2.four {
-    animation-name: rotateInDownLeft;
-}
-
-.sliders .slider .owl-item.active h2.five {
-    animation-name: rotateInUpLeft;
-}
-
-.sliders .slider .owl-item.active h2.six {
-    animation-name: wobble;
-}
-
-@media(max-width: 767.99px) {
-    .sliders .slider {
-        margin-bottom: 30px;
-    }
-}
-
 /******************************Third Sliders**************************************/
 .my-sliders {
-    padding: 100px 0px;
+    padding-top: 70px;
 }
 
 .my-sliders .third-carousel .owl-stage-outer {
@@ -197,13 +133,55 @@ header{
         box-shadow: 0px 0px 14px 7px #009688;
     }
 }
+.my-sliders .third-carousel.copy1 .owl-stage-outer {
+    border: 10px solid #673AB7;
+    border-radius: 3px;
+    box-shadow: 0px 0px 14px 7px #673AB7;
+    animation: flashShadowCopy 1s ease-in-out 0s infinite forwards;
+}
+
+@keyframes flashShadowCopy {
+    0% {
+        box-shadow: 0px 0px 14px 7px #673AB7;
+    }
+
+    50% {
+        box-shadow: 0px 0px 7px 3.5px #673AB7;
+    }
+
+    100% {
+        box-shadow: 0px 0px 14px 7px #673AB7;
+    }
+}
+
+.my-sliders .third-carousel.copy2 .owl-stage-outer {
+    border: 10px solid #f39914;
+    border-radius: 3px;
+    box-shadow: 0px 0px 14px 7px #f39914;
+    animation: flashShadowCopy2 1s ease-in-out 0s infinite forwards;
+}
+
+@keyframes flashShadowCopy2 {
+    0% {
+        box-shadow: 0px 0px 14px 7px #f39914;
+    }
+
+    50% {
+        box-shadow: 0px 0px 7px 3.5px #f39914;
+    }
+
+    100% {
+        box-shadow: 0px 0px 14px 7px #f39914;
+    }
+}
+
 
 .my-sliders .my-slider .owl-carousel .item {
     position: relative;
 }
 
 .my-sliders .my-slider .owl-carousel .item img {
-    height: 300px !important;
+    height: 250px !important;
 }
 
 .my-sliders .my-slider .owl-carousel .item .cover {
@@ -272,7 +250,7 @@ header{
 
 /******************************Last Sliders**************************************/
 .last-sliders {
-    padding: 100px 0px;
+    padding-top: 70px;
 }
 
 .last-sliders .fourth-carousel .owl-stage-outer {
@@ -296,12 +274,54 @@ header{
     }
 }
 
+.last-sliders .fourth-carousel.copy41 .owl-stage-outer {
+    border: 10px solid #9E9E9E;
+    border-radius: 3px;
+    box-shadow: 0px 0px 12px 6px #9E9E9E;
+    animation: lastFlashShadowCopy1 1s ease-in-out 0s infinite forwards;
+}
+
+@keyframes lastFlashShadowCopy1 {
+    0% {
+        box-shadow: 0px 0px 12px 6px #9E9E9E;
+    }
+
+    50% {
+        box-shadow: 0px 0px 6px 2px #9E9E9E;
+    }
+
+    100% {
+        box-shadow: 0px 0px 12px 6px #9E9E9E;
+    }
+}
+.last-sliders .fourth-carousel.copy42 .owl-stage-outer {
+    border: 10px solid #607D8B;
+    border-radius: 3px;
+    box-shadow: 0px 0px 12px 6px #607D8B;
+    animation: lastFlashShadowCopy2 1s ease-in-out 0s infinite forwards;
+}
+
+@keyframes lastFlashShadowCopy2 {
+    0% {
+        box-shadow: 0px 0px 12px 6px #607D8B;
+    }
+
+    50% {
+        box-shadow: 0px 0px 6px 2px #607D8B;
+    }
+
+    100% {
+        box-shadow: 0px 0px 12px 6px #607D8B;
+    }
+}
+
+
 .last-sliders .last-slider .owl-carousel .item {
     position: relative;
 }
 
 .last-sliders .last-slider .owl-carousel .item img {
-    height: 250px !important;
+    height: 340px !important;
 }
 
 .last-sliders .last-slider .owl-carousel .item .cover {

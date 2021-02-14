@@ -23,10 +23,6 @@
 	display: table;
 	zoom: 1;
 	position: relative;
-	width: 100%;
-	max-width: 1280px;
-	max-height: 720px;
-	margin: 0px auto 0px;
 	z-index: 90;
 	text-align: left;
 	/* reset align=center */
