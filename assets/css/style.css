@@ -21,7 +21,7 @@
 
 #wowslider-container1 {
 	display: table;
-	zoom: 1;
+	/* zoom: 1; */
 	position: relative;
 	z-index: 90;
 	text-align: left;
