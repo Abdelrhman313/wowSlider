@@ -1,28 +1,26 @@
-.container-fluid {
-    padding-left: 30px !important;
-    padding-right: 30px !important;
-}
-
-.row{
-    margin: 0px !important;
-}
-
 body{
     margin: 0px;
     padding-bottom: 40px;
+    width: 100%;
 }
 
 *{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 /* ******************************************************** */
 header {
-    padding-top: 70px;
+    width: 1820px !important;
+    margin: auto;
+    padding: 100px 0px 0px;
 }
 
 .mainSlider {
-    height: 500px !important;
+    width: 1400px !important;
+    height: 600px !important;
+    margin: auto;
     border: 10px solid;
     box-shadow: 0px 0px 10px 4px #44adff;
     border-image-source: linear-gradient(to right, #2d71a7, #1d354a, #2396f3, #2d71a7);
@@ -45,7 +43,8 @@ header {
 }
 
 .ws_images {
-    height: 520px !important;
+    max-height: 600px !important;
+    max-width: 1400px !important;
 }
 
 .item {
@@ -66,7 +65,7 @@ header {
 }
 
 .item img {
-    width: 100%;
+    width: 1400px;
     height: 100% !important;
     display: block;
     object-fit: cover;
@@ -110,78 +109,92 @@ header {
 
 /******************************Third Sliders**************************************/
 .my-sliders {
-    padding-top: 70px;
+    padding: 70px 0px 0px;
+    display: flex;
+    justify-content: center;
+    width: 1820px !important;
+    margin: auto;
 }
 
+.my-sliders .third-carousel{
+    width: 560px !important;
+    height: 360px !important;
+    margin-right: 10px;
+}
+.my-sliders .third-carousel.last{margin-right: 0px;}
+
 .my-sliders .third-carousel .owl-stage-outer {
-    border: 10px solid #009688;
+    border: 7px solid #009688;
     border-radius: 3px;
-    box-shadow: 0px 0px 14px 7px #009688;
+    box-shadow: 0px 0px 10px 5px #009688;
     animation: flashShadow 1s ease-in-out 0s infinite forwards;
 }
 
 @keyframes flashShadow {
     0% {
-        box-shadow: 0px 0px 14px 7px #009688;
+        box-shadow: 0px 0px 10px 5px #009688;
     }
 
     50% {
-        box-shadow: 0px 0px 7px 3.5px #009688;
+        box-shadow: 0px 0px 5px 2.5px #009688;
     }
 
     100% {
-        box-shadow: 0px 0px 14px 7px #009688;
+        box-shadow: 0px 0px 10px 5px #009688;
     }
 }
 .my-sliders .third-carousel.copy1 .owl-stage-outer {
-    border: 10px solid #673AB7;
+    border: 7px solid #673AB7;
     border-radius: 3px;
-    box-shadow: 0px 0px 14px 7px #673AB7;
+    box-shadow: 0px 0px 10px 5px #673AB7;
     animation: flashShadowCopy 1s ease-in-out 0s infinite forwards;
 }
 
 @keyframes flashShadowCopy {
     0% {
-        box-shadow: 0px 0px 14px 7px #673AB7;
+        box-shadow: 0px 0px 10px 5px #673AB7;
     }
 
     50% {
-        box-shadow: 0px 0px 7px 3.5px #673AB7;
+        box-shadow: 0px 0px 5px 2.5px #673AB7;
     }
 
     100% {
-        box-shadow: 0px 0px 14px 7px #673AB7;
+        box-shadow: 0px 0px 10px 5px #673AB7;
     }
 }
 
 .my-sliders .third-carousel.copy2 .owl-stage-outer {
-    border: 10px solid #f39914;
+    border: 7px solid #f39914;
     border-radius: 3px;
-    box-shadow: 0px 0px 14px 7px #f39914;
+    box-shadow: 0px 0px 10px 5px #f39914;
     animation: flashShadowCopy2 1s ease-in-out 0s infinite forwards;
 }
 
 @keyframes flashShadowCopy2 {
     0% {
-        box-shadow: 0px 0px 14px 7px #f39914;
+        box-shadow: 0px 0px 10px 5px #f39914;
     }
 
     50% {
-        box-shadow: 0px 0px 7px 3.5px #f39914;
+        box-shadow: 0px 0px 5px 2.5px #f39914;
     }
 
     100% {
-        box-shadow: 0px 0px 14px 7px #f39914;
+        box-shadow: 0px 0px 10px 5px #f39914;
     }
 }
 
 
 .my-sliders .my-slider .owl-carousel .item {
     position: relative;
+    width: 560px !important;
+    height: 360px !important;
 }
 
 .my-sliders .my-slider .owl-carousel .item img {
-    height: 250px !important;
+    width: 560px !important;
+    height: 360px !important;
 }
 
 .my-sliders .my-slider .owl-carousel .item .cover {
@@ -251,77 +264,90 @@ header {
 /******************************Last Sliders**************************************/
 .last-sliders {
     padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    width: 1820px !important;
+    margin: auto;
 }
+.last-sliders .fourth-carousel{
+    width: 360px !important;
+    height: 560px !important;
+    margin-right: 10px;
+}
+.last-sliders .fourth-carousel.last{margin-right: 0px;}
 
 .last-sliders .fourth-carousel .owl-stage-outer {
-    border: 10px solid #4CAF50;
+    border: 7px solid #4CAF50;
     border-radius: 3px;
-    box-shadow: 0px 0px 12px 6px #4CAF50;
+    box-shadow: 0px 0px 10px 5px #4CAF50;
     animation: lastFlashShadow 1s ease-in-out 0s infinite forwards;
 }
 
 @keyframes lastFlashShadow {
     0% {
-        box-shadow: 0px 0px 12px 6px #4CAF50;
+        box-shadow: 0px 0px 10px 5px #4CAF50;
     }
 
     50% {
-        box-shadow: 0px 0px 6px 2px #4CAF50;
+        box-shadow: 0px 0px 5px 2.5px #4CAF50;
     }
 
     100% {
-        box-shadow: 0px 0px 12px 6px #4CAF50;
+        box-shadow: 0px 0px 10px 5px #4CAF50;
     }
 }
 
 .last-sliders .fourth-carousel.copy41 .owl-stage-outer {
-    border: 10px solid #9E9E9E;
+    border: 7px solid #9E9E9E;
     border-radius: 3px;
-    box-shadow: 0px 0px 12px 6px #9E9E9E;
+    box-shadow: 0px 0px 10px 5px #9E9E9E;
     animation: lastFlashShadowCopy1 1s ease-in-out 0s infinite forwards;
 }
 
 @keyframes lastFlashShadowCopy1 {
     0% {
-        box-shadow: 0px 0px 12px 6px #9E9E9E;
+        box-shadow: 0px 0px 10px 5px #9E9E9E;
     }
 
     50% {
-        box-shadow: 0px 0px 6px 2px #9E9E9E;
+        box-shadow: 0px 0px 5px 2.5px #9E9E9E;
     }
 
     100% {
-        box-shadow: 0px 0px 12px 6px #9E9E9E;
+        box-shadow: 0px 0px 10px 5px #9E9E9E;
     }
 }
 .last-sliders .fourth-carousel.copy42 .owl-stage-outer {
-    border: 10px solid #607D8B;
+    border: 5px solid #607D8B;
     border-radius: 3px;
-    box-shadow: 0px 0px 12px 6px #607D8B;
+    box-shadow: 0px 0px 10px 5px #607D8B;
     animation: lastFlashShadowCopy2 1s ease-in-out 0s infinite forwards;
 }
 
 @keyframes lastFlashShadowCopy2 {
     0% {
-        box-shadow: 0px 0px 12px 6px #607D8B;
+        box-shadow: 0px 0px 10px 5px #607D8B;
     }
 
     50% {
-        box-shadow: 0px 0px 6px 2px #607D8B;
+        box-shadow: 0px 0px 5px 2.5px #607D8B;
     }
 
     100% {
-        box-shadow: 0px 0px 12px 6px #607D8B;
+        box-shadow: 0px 0px 10px 5px #607D8B;
     }
 }
 
 
 .last-sliders .last-slider .owl-carousel .item {
     position: relative;
+    width: 360px !important;
+    height: 560px !important;
 }
 
 .last-sliders .last-slider .owl-carousel .item img {
-    height: 340px !important;
+    width: 360px !important;
+    height: 560px !important;
 }
 
 .last-sliders .last-slider .owl-carousel .item .cover {
