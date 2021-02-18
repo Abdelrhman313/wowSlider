@@ -1,6 +1,5 @@
 body {
     margin: 0px;
-    padding-bottom: 40px;
     width: 100%;
 }
 
@@ -10,7 +9,48 @@ body {
     box-sizing: border-box;
 }
 
+/* SideBar Style */
+.leftSideBar,
+.rightSideBar{
+    margin-top: 56px;
+    position: fixed;
+    top: 0px;
+    width: 60px;
+    height: 100%;
+    height: -webkit-fill-available;
+    background: #2980B9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(225deg, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(225deg, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.leftSideBar{
+    left: 0px;
+}
+.rightSideBar{
+    right: 0px;
+}
+
+.leftSideBar .allItem,
+.rightSideBar .allItem,
+.slick-slider{
+    width: 50px;
+    height: 100%;
+    margin: auto;
+}
+.slick-vertical .slick-slide,
+.slick-vertical .slick-slide img{
+    width: 50px !important;
+    height: 242px !important;
+}
+
 /* ******************************************************** */
+.allContent{
+    background: #11998e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: auto;
+    padding-bottom: 40px;
+}
+
 header {
     width: 1820px !important;
     margin: auto;
@@ -474,6 +514,14 @@ header {
 }
 
 /************************************* Responsive **************************************/
+/* Extra large screen */
+
+@media(min-width: 1200px){
+    .allContent{
+        width: 1820px;
+    }
+}
+
 /* large screen */
 @media(min-width: 991.99px) and (max-width: 1199px) {
 
@@ -621,7 +669,7 @@ header {
 
 /* small screen */
 @media(min-width: 574.99px) and (max-width: 767.99px) {
-    
+
     /* large slider */
     header {
         width: 574px !important;
@@ -696,6 +744,7 @@ header {
 
 /* xsmall screen */
 @media(max-width: 574.99px) {
+
     /* large slider */
     header {
         width: 320px !important;

@@ -1,6 +1,7 @@
 $(() => {
-    (e)=>{
-        e,preventDefault();
+    (e) => {
+        e,
+        preventDefault();
     }
     // Navigation
     links = [...$('nav ul li a')];
@@ -14,6 +15,29 @@ $(() => {
             });
         });
     });
+
+    // SideBar Carousel
+    sidebarOptions = {
+        autoplay: true,
+        autoplaySpeed: 1000,
+        arrows: false,
+        dots: false,
+        easing: 'linear',
+        infinite: true,
+        vertical: true,
+        verticalSwiping: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        cssEase: 'linear',
+    }
+
+    sideOptionLeft = sidebarOptions;
+    sideOptionLeft['verticalReverse'] = true;
+    $('.allItems.left').slick(sideOptionLeft);
+    
+    sideOptionRight = sidebarOptions;
+    sideOptionRight['verticalReverse'] = false;
+    $('.allItems.right').slick(sideOptionRight);
 
     // Main Slider Options 
     mainOptions = {
@@ -36,7 +60,7 @@ $(() => {
             }
         },
     }
-    
+
     // Third sliders
     firstCarouselOptions = mainOptions;
     firstCarouselOptions['animateOut'] = 'animate__bounceOutLeft';
@@ -82,7 +106,7 @@ $(() => {
     $slider2 = mainOptions;
     $slider2['animateOut'] = 'animate__zoomOutDown';
     $('.last-sliders .last-slider #eight-anim').owlCarousel($slider2);
-    
+
     $slider3 = mainOptions;
     $slider3['animateOut'] = 'animate__zoomOutUp';
     $('.last-sliders .last-slider #nine-anim').owlCarousel($slider3);
