@@ -251,9 +251,7 @@ function ws_lines(d, l, m) {
     }
 };
 
-// -----------------------------------------------------------------------------------
-
-var options = {
+jQuery("#wowslider-container0").wowSlider({
     effect: "lines",
     prev: "",
     next: "",
@@ -275,21 +273,10 @@ var options = {
     onBeforeStep: 0,
     images: 0,
     onStep: function(index){
-        slides = [...$('ul li.item')];
+        slides = [...$('#wowslider-container0 ul li.item')];
         slides.forEach(slide=>{
             slide.classList.remove('active');
         })
         slides[index].classList.add('active');
     }
-};
-
-jQuery(".mainSlider").wowSlider(options);
-
-// Disabled Links IN Sliders
-links = [...jQuery(".mainSlider a")];
-
-links.forEach(link=>{
-    link.href = 'javascript:void(0)';
-    link.onclick="null";
-    link.target = '';
 });

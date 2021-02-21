@@ -9,6 +9,7 @@ body {
     box-sizing: border-box;
 }
 
+/* ******************************************************** */
 /* SideBar Style */
 .leftSideBar,
 .rightSideBar{
@@ -57,7 +58,7 @@ header {
     padding: 100px 0px 0px;
 }
 
-.mainSlider {
+.mainSlider,.newWow {
     width: 1400px !important;
     height: 600px !important;
     margin: auto;
@@ -66,6 +67,10 @@ header {
     border-image-source: linear-gradient(to right, #2d71a7, #1d354a, #2396f3, #2d71a7);
     border-image-slice: 1;
     animation: fitShadow 1s ease-in-out infinite 0s forwards;
+}
+
+.newWow{
+    margin-top: 100px !important;
 }
 
 @keyframes fitShadow {
@@ -82,16 +87,18 @@ header {
     }
 }
 
-.ws_images {
+.ws_images,
+.newWow .ws_images{
     max-height: 600px !important;
     max-width: 1400px !important;
 }
 
-.item {
+.item,
+.newWow .item {
     position: relative;
 }
 
-.item .content {
+.item .content{
     position: absolute;
     top: 0px;
     left: 0px;
@@ -111,7 +118,7 @@ header {
     object-fit: cover;
 }
 
-.item .content h1 {
+.item .content h1{
     font-size: 56px;
     font-weight: 600;
     margin: 5px 0 20px;
@@ -119,7 +126,7 @@ header {
     color: #fff;
 }
 
-.item.active .content h1 {
+.item.active .content h1{
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
     -webkit-animation-fill-mode: both;
@@ -127,7 +134,7 @@ header {
     animation-delay: 0.6s;
 }
 
-.item.active .content h1.one {
+.item.active .content h1.one{
     animation-name: bounceInLeft;
 }
 
@@ -135,7 +142,7 @@ header {
     animation-name: bounceInRight;
 }
 
-.item.active .content h1.three {
+.item.active .content h1.three  {
     animation-name: rollIn;
 }
 
@@ -530,7 +537,8 @@ header {
         width: 980px !important;
     }
 
-    .mainSlider {
+    .mainSlider,
+    .newWow {
         width: 950px !important;
         height: 600px !important;
     }
@@ -602,7 +610,8 @@ header {
         width: 760px !important;
     }
 
-    .mainSlider {
+    .mainSlider,
+    .newWow {
         width: 740px !important;
         height: 400px !important;
     }
@@ -675,13 +684,15 @@ header {
         width: 574px !important;
     }
 
-    .mainSlider {
+    .mainSlider,
+    .newWow {
         display: block !important; 
         width: 540px !important;
         height: 420px !important;
     }
 
-    .mainSlider .ws_images {
+    .mainSlider .ws_images,
+    .newWow .ws_images  {
         max-width: 540px !important;
         max-height: 420px !important;
     }
@@ -750,23 +761,25 @@ header {
         width: 320px !important;
     }
 
-    .mainSlider {
+    .mainSlider,
+    .newWow{
         display: block !important; 
         width: 300px !important;
         height: 420px !important;
     }
 
-    .mainSlider .ws_images {
+    .mainSlider .ws_images,
+    .newWow .ws_images{
         max-width: 300px !important;
         max-height: 420px !important;
     }
 
-    .item img {
-        width: 300px;
-        height: 420px;
+    .item img{
+        width: 300px !important;
+        height: 420px !important;
     }
 
-    .item .content h1 {
+    .item .content h1{
         font-size: 30px;
     }
 
