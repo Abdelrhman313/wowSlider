@@ -1,19 +1,12 @@
 $(() => {
-    (e) => {
-        e,
-        preventDefault();
-    }
-
     // Scroll Content
     mainSlickOptions={
         // autoplay: true,
         // autoplaySpeed: 4000,
-        initialSlide: 0,
         arrows: false,
         dots: false,
         easing: 'linear',
         infinite: true,
-        transformEnabled:false,
         vertical: true,
         verticalSwiping: true,
         slidesToShow: 1,

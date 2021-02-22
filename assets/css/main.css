@@ -539,7 +539,7 @@ header {
 
 @media(min-width: 1200px){
     .allContent{
-        width: 1820px;
+        width: 1820px !important;
     }
 }
 
