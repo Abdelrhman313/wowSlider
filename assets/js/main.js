@@ -13,9 +13,18 @@ $(() => {
         slidesToScroll: 1,
         cssEase: 'linear',
         verticalReverse: false,
+        useTransform: false,
     }
     $('.mySlick').slick(mainSlickOptions);
     
+    var skickInterval = setInterval(() => {
+        let value = $('.mySlick .slick-track').css('top').replace('px','');
+        if(+value <= -15226){
+            value = -0;
+            document.querySelector('.allContent .mySlick .slick-track').style.top = value + 'px';
+        }
+    }, 1000);
+
     // Navigation
     links = [...$('nav ul li a')];
     links.forEach(link => {

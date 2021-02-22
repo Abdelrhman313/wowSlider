@@ -70,7 +70,7 @@ body {
     height:1100px !important;
 }
 
-header {
+.header {
     width: 1820px !important;
     margin: auto;
     padding: 40px 0px 0px;
@@ -553,7 +553,7 @@ header {
     }
 
     /* large slider */
-    header {
+    .header {
         width: 980px !important;
     }
 
@@ -631,7 +631,7 @@ header {
         width: 760px !important;
     }
     /* large slider */
-    header {
+    .header {
         width: 760px !important;
     }
 
@@ -710,7 +710,7 @@ header {
         width: 574px !important;
     }
     /* large slider */
-    header {
+    .header {
         width: 574px !important;
     }
 
@@ -792,7 +792,7 @@ header {
         width: 320px !important;
     }
     /* large slider */
-    header {
+    .header {
         width: 320px !important;
     }
 
