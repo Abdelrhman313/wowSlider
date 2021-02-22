@@ -4,36 +4,25 @@ $(() => {
         preventDefault();
     }
 
-    // // Scroll Body
-    // $(window).on('load', function () {
-    //     $('html, body').animate({
-    //         scrollTop: 0
-    //     }, 100);
-    // });
-    // //scroll to bottom
-    // setInterval(function () {
-
-    //     //time to scroll to bottom
-    //     $("html, body").animate({
-    //         scrollTop: $(document).height()
-    //     }, 60000);
-
-    //     //scroll to top
-    //     setTimeout(function () {
-    //         $('html, body').animate({
-    //             scrollTop: 0
-    //         }, 60000);
-    //     }, 500); //call every 2000 miliseconds
-
-    // }, 2000); //call every 2000 miliseconds
-
-    // $('body,html').bind('mousedown wheel DOMMouseScroll mousewheel keyup', function (e) {
-    //     if (e.which > 0 || e.type == "mousedown" || e.type == "mousewheel" || e.type == "DOMMouseScroll" || e.type == "keyup") {
-    //         $("html,body").stop();
-    //     }
-    // });
-
-
+    // Scroll Content
+    mainSlickOptions={
+        // autoplay: true,
+        // autoplaySpeed: 4000,
+        initialSlide: 0,
+        arrows: false,
+        dots: false,
+        easing: 'linear',
+        infinite: true,
+        transformEnabled:false,
+        vertical: true,
+        verticalSwiping: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        cssEase: 'linear',
+        verticalReverse: false,
+    }
+    $('.mySlick').slick(mainSlickOptions);
+    
     // Navigation
     links = [...$('nav ul li a')];
     links.forEach(link => {
@@ -65,7 +54,7 @@ $(() => {
     sideOptionLeft = sidebarOptions;
     sideOptionLeft['verticalReverse'] = true;
     sideOptionLeft['asNavFor'] = '.allItems.right';
-    var slider = $('.allItems.left').slick(sideOptionLeft);
+    $('.allItems.left').slick(sideOptionLeft);
 
     sideOptionRight = sidebarOptions;
     sideOptionRight['verticalReverse'] = false;
