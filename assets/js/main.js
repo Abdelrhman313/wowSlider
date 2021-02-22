@@ -4,22 +4,34 @@ $(() => {
         preventDefault();
     }
 
-    // Scroll Body
-    $(window).on('load', function(){
-        $('html, body').animate({scrollTop:0}, 100);
-    });
-    //scroll to bottom
-    setInterval(function(){
+    // // Scroll Body
+    // $(window).on('load', function () {
+    //     $('html, body').animate({
+    //         scrollTop: 0
+    //     }, 100);
+    // });
+    // //scroll to bottom
+    // setInterval(function () {
 
-        //time to scroll to bottom
-        $("html, body").animate({ scrollTop: $(document).height() }, 60000);
+    //     //time to scroll to bottom
+    //     $("html, body").animate({
+    //         scrollTop: $(document).height()
+    //     }, 60000);
 
-        //scroll to top
-        setTimeout(function() {
-        $('html, body').animate({scrollTop:0}, 60000);
-        },500);//call every 2000 miliseconds
+    //     //scroll to top
+    //     setTimeout(function () {
+    //         $('html, body').animate({
+    //             scrollTop: 0
+    //         }, 60000);
+    //     }, 500); //call every 2000 miliseconds
 
-    },2000);//call every 2000 miliseconds
+    // }, 2000); //call every 2000 miliseconds
+
+    // $('body,html').bind('mousedown wheel DOMMouseScroll mousewheel keyup', function (e) {
+    //     if (e.which > 0 || e.type == "mousedown" || e.type == "mousewheel" || e.type == "DOMMouseScroll" || e.type == "keyup") {
+    //         $("html,body").stop();
+    //     }
+    // });
 
 
     // Navigation
