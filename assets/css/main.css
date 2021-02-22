@@ -624,7 +624,12 @@ header {
 
 /* Medium screen */
 @media(min-width: 768px) and (max-width: 991px) {
-    
+    .mySlick.slick-initialized.slick-slider.slick-vertical{
+        z-index: 1000;
+    }
+    .allContent .slick-track{
+        width: 760px !important;
+    }
     /* large slider */
     header {
         width: 760px !important;
@@ -698,7 +703,12 @@ header {
 
 /* small screen */
 @media(min-width: 574.99px) and (max-width: 767.99px) {
-
+    .mySlick.slick-initialized.slick-slider.slick-vertical{
+        z-index: 1000;
+    }
+    .allContent .slick-track{
+        width: 574px !important;
+    }
     /* large slider */
     header {
         width: 574px !important;
@@ -775,7 +785,12 @@ header {
 
 /* xsmall screen */
 @media(max-width: 574.99px) {
-
+    .mySlick.slick-initialized.slick-slider.slick-vertical{
+        z-index: 1000;
+    }
+    .allContent .slick-track{
+        width: 320px !important;
+    }
     /* large slider */
     header {
         width: 320px !important;
