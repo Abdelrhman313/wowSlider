@@ -14,7 +14,8 @@ $(() => {
         verticalReverse: false,
         useTransform: false,
         pauseOnFocus: false, 
-        pauseOnHover: false 
+        pauseOnHover: false,
+        cssEase: 'linear',
     }
     $('.mySlick').slick(mainSlickOptions);
     
