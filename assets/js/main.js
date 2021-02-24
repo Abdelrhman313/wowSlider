@@ -14,7 +14,7 @@ $(() => {
         slidesToScroll: 1,
         verticalReverse: false,
         useTransform: false,
-        pauseOnFocus: false, 
+        pauseOnFocus: true, 
         pauseOnHover: false,
         cssEase: 'linear',
     }
