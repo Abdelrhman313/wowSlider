@@ -2,6 +2,7 @@ $(() => {
     // Scroll Content
     mainSlickOptions={
         autoplay: true,
+        speed: 6000,
         autoplaySpeed: 0,
         arrows: false,
         dots: false,
