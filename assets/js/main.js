@@ -2,7 +2,7 @@ $(() => {
     // Scroll Content
     mainSlickOptions={
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 0,
         arrows: false,
         dots: false,
         draggable: true,
