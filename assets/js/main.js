@@ -2,22 +2,23 @@ $(() => {
     // Scroll Content
     mainSlickOptions={
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 1000,
         arrows: false,
         dots: false,
-        easing: 'linear',
+        draggable: true,
         infinite: true,
         vertical: true,
         verticalSwiping: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        cssEase: 'linear',
         verticalReverse: false,
         useTransform: false,
+        pauseOnFocus: false, 
+        pauseOnHover: false 
     }
     $('.mySlick').slick(mainSlickOptions);
     
-    var skickInterval = setInterval(() => {
+    setInterval(() => {
         let value = $('.mySlick .slick-track').css('top').replace('px','');
         if(+value <= -15226){
             value = -0;
